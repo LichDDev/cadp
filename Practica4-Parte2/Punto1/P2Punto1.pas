@@ -7,7 +7,7 @@ procedure leerDatos(var vec : vNumeros;var dimL :integer);
 begin
     write('ingrese un valor: ');
     readln(vec[dimL]);
-    while(dimL<500)and(vec[dimL] <>0)do
+    while(dimL<500)and(vec[dimL]<>0)do
     begin
         dimL:=dimL+1;
         write('ingrese un valor: ');
@@ -19,32 +19,25 @@ function encontrarValor(n:integer;vec:vNumeros;dimL:integer):boolean;
 var
     i:integer;
 begin
-    for i:= 1 to dimL do
+    encontrarValor:=false;
+
+    {for i:= 1 to dimL do
     begin
-        if (n = vec[i]) then
-        begin
+        if (vec[i] = n) then
             encontrarValor:=true;
-        end
-        else
-        begin
-            if(n <> vec[i]) and(i=dimL)then
-            begin
-                encontrarValor:=false;
-            end;
-        end;
-    end;
+    end;}
+    if(vec[n] = n)then
+        encontrarValor:=true;
 end;
 
 var
     vector: vNumeros;
-    num : integer;
+    num ,i: integer;
     dimL:integer;
 begin
     dimL:= 1;
 
     leerDatos(vector,dimL);
-    writeln('la dimencion del vector es de: ',dimL);
-    
     write('ingrese un valor a encontrar: ');
     readln(num);
 
