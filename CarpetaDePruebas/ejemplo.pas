@@ -1,27 +1,20 @@
-program Registros;
- type
-    str20 = string[20];
-    alumno = record
-        codigo : integer;
-        nombre : str20;
-        promedio : real;
- end;
+program da;
 
- procedure leer(var alu : alumno);
- begin
-    write('Ingrese el código del alumno');
-    readln(alu.codigo);
-    if (alu.codigo <> 0) then begin
-        write('Ingrese el nombre del alumno'); 
-        readln(alu.nombre);
-        write('Ingrese el promedio del alumno'); 
-        readln(alu.promedio);
+type
+    prueba = record
+        hola: integer;
+        pe:string[9];
+        o:real;
     end;
- end;
- { declaración de variables del programa principal }
- var
- a : alumno;
- { cuerpo del programa principal }
- begin
-     leer(a);
- end.
+    puntero = ^prueba;
+var
+    pu:puntero;
+
+begin
+    {writeln(sizeof(pu^.o), ' bytes');}
+    writeln(sizeof(pu^.pe), ' bytes');
+    writeln(sizeof(pu^.hola), ' bytes');
+
+    writeln(sizeof(pu^), ' bytes');
+end.
+
