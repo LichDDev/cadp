@@ -2,19 +2,21 @@ program da;
 
 type
     prueba = record
-        hola: integer;
+        hola: real;
         pe:string[9];
-        o:real;
     end;
     puntero = ^prueba;
 var
     pu:puntero;
-
+    hola:real;
 begin
-    {writeln(sizeof(pu^.o), ' bytes');}
-    writeln(sizeof(pu^.pe), ' bytes');
-    writeln(sizeof(pu^.hola), ' bytes');
+    writeln(sizeof(pu), ' bytes');{4}
+    new(pu);
+    writeln(sizeof(pu), ' bytes');{4}
+    writeln(sizeof(pu^), ' bytes');{51}
 
-    writeln(sizeof(pu^), ' bytes');
+    writeln(sizeof(pu^.hola), ' bytes');{8}
+
+    writeln(sizeof(pu^.pe), ' bytes');{51}
 end.
 

@@ -18,4 +18,11 @@ begin
 
     writeln(sizeof(pc^), ' bytes');{51}
 end.
+{
+    Memoria Estatica:
+    pc = 4 bytes
+    
+    Memoria Dinamica:
+    pc^ = 51 bytes
 
+}

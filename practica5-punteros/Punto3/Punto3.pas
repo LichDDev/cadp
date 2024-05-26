@@ -19,3 +19,12 @@ begin
 
     writeln(sizeof(n^), ' bytes');{20000}
 end.
+{
+    Memoria Estatica:
+    n = 4 bytes
+    num = 20000 bytes
+    i = 2 bytes
+    
+    Memoria Dinamica:
+    n^ = 20000 bytes 
+}

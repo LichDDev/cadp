@@ -15,19 +15,28 @@ var
 begin
 
     writeln(sizeof(p), ' bytes');{4}
-    writeln(sizeof(prod), ' bytes');{24 nose por que }
+    writeln(sizeof(prod), ' bytes');{16 depende del compilador }
 
     new(p);
     writeln(sizeof(p), ' bytes');{4}
 
     p^.codigo := 1;
     p^.descripcion := 'nuevo producto';
-    writeln(sizeof(p^), ' bytes');{22}
+    writeln(sizeof(p^), ' bytes');{16}
 
     p^.precio := 200;
-    writeln(sizeof(p^), ' bytes');{22}
+    writeln(sizeof(p^), ' bytes');{16}
 
     prod.codigo := 2;
     prod.descripcion := 'otro nuevo producto';
-    writeln(sizeof(prod), ' bytes');{22}
+    writeln(sizeof(prod), ' bytes');{16}
 end.
+{
+    Memoria Estatica:
+    p = 4 bytes
+    prod = 16 bytes
+    
+    Memoria Dinamica:
+    p^ = 16 bytes 
+
+}
