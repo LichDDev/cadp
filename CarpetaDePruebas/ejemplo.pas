@@ -3,20 +3,27 @@ program da;
 type
     prueba = record
         hola: real;
-        pe:string[9];
+        pe:integer;
     end;
-    puntero = ^prueba;
+
+    puntero = record
+        numero: prueba;
+    end;
+
+procedure a(var hola:puntero);
 var
-    pu:puntero;
-    hola:real;
+    p:prueba;
 begin
-    writeln(sizeof(pu), ' bytes');{4}
-    new(pu);
-    writeln(sizeof(pu), ' bytes');{4}
-    writeln(sizeof(pu^), ' bytes');{51}
-
-    writeln(sizeof(pu^.hola), ' bytes');{8}
-
-    writeln(sizeof(pu^.pe), ' bytes');{51}
+    write('ingrese el valor: ');
+    readln(p.hola);
+    write('ingrese el valor: ');
+    readln(p.pe);
+    hola.numero:=p;
+end;
+var
+    hola:puntero;
+begin
+    a(hola);
+    writeln(hola.numero.pe);
 end.
 
