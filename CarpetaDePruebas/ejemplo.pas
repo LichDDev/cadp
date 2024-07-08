@@ -1,29 +1,15 @@
-program da;
+program a;
 
-type
-    prueba = record
-        hola: real;
-        pe:integer;
-    end;
-
-    puntero = record
-        numero: prueba;
-    end;
-
-procedure a(var hola:puntero);
 var
-    p:prueba;
+    i:integer;
+    num:integer;
 begin
-    write('ingrese el valor: ');
-    readln(p.hola);
-    write('ingrese el valor: ');
-    readln(p.pe);
-    hola.numero:=p;
-end;
-var
-    hola:puntero;
-begin
-    a(hola);
-    writeln(hola.numero.pe);
+    num:=0;
+    for i := 0 to 10 do
+    begin
+        num:=num +1;
+        writeln(num);
+
+    end;
 end.
 
