@@ -1,15 +1,12 @@
 program a;
 
 var
-    i:integer;
-    num:integer;
+    v: array[1..5] of integer;
+    i: integer;
 begin
-    num:=0;
-    for i := 0 to 10 do
-    begin
-        num:=num +1;
-        writeln(num);
-
-    end;
+    for i := 0 to 8 do
+        v[i] := i;
+    for i := 0 to 8 do
+        writeln(v[i]);
 end.
 

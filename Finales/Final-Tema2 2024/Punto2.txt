@@ -1,0 +1,4 @@
+ Ambos son valido mas no cumplen con la misma funcion, 
+en el A se declara una variable creando el tipo de structura directamente
+mientras que en el B se crea la estructura en el Type haciendo que sea una 
+estructura de datos reutilizable para otras variables.   
