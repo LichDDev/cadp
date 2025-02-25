@@ -1,0 +1,11 @@
+5) a) falso, no todos los tipos simples pueden ser base para un subrango ya que tambien tiene que ser ordinal 
+por ejm. Type 
+            tipo1= valor1..valor2;
+            notas=1..10;
+            letras='a'..'z';
+   b)falso, el que tenga modulos o no no tiene nada que ver con la eficiencia solo lo hace que el programa sea mas reutilizable, 
+tambien depende de que tipo de algoritmos lleve cada modulo
+   c)Verdadero
+   d)Verdadero, mientras la dimencion logica no sea 0 se puede ya que el repeat se ejecuta al menos una vez esto se podria evitar usando algun if para 
+verificar que la dimencion logica es diferente de 0
+   e)falso, los modulos y el programa tambien se pueden comunicar por variables globales

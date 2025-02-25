@@ -1,0 +1,18 @@
+2) a)Falso, si es posible la utilizacion de variables globales para la comunicacion entre  modulos
+    b)Falso,si el elemento no se encuentra en el vector no es posible eliminarlo
+    c)verdadero, un programa que esta modularizado no quiere decir que esta correcto solo lo hace mas reutilizable 
+    d)falso. en el caso de los vectores al estar indexado se puede acceder al elemento sin tener que reccorrerlo todo
+3)
+    1)invalido. por que tendria que especificar a que campo del registro quiere asignarle el valor ingresado
+    2)invalido. new no aplica a un registro solo a punteros
+    3)valido. se le esta asignando a una lista el valor nil
+    4)valido. un new en una estructura de tipo lista que es correcto ya que es un tipo de dato compuesto por un puntero
+    5)valido. se le esta asignando la direccion de memoria de cli a cli_esp que son del mismo tipo
+    6)valido
+    7)valido.se esta asignando correctamente al elemento que esta en la lista de registros
+4)estan las variable globales y los parametro
+Las variables globales se declaran al principio de todo el programa y se pueden utilizar en todo el programa tanto en modulos como en el programa principal
+
+Los paramteros son una forma de pasar datos entre los modulos y el programa principal,existen dos formas por valor o por referencia
+por valor el modulo recibe una copia del valor, con el que trabajara mas no realizara modificacion alguna al valor original fuera del modulo
+por referencia el modulo recibe una direccion de un valor con el cual trabajara y el valor tendra cambios fuera del modulo.
